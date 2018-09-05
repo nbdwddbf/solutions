@@ -1,0 +1,17 @@
+ubuntu软件设置快捷方式：
+   1、我们打开Ubuntu的文件管理器，进入如下的文件夹  cd /usr/share/applications,这个文件夹里面包含有程序的快捷图标
+   2、该目录下添加桌面配置文件 （以smartgit.desktop为例)
+   sudo gedit  /usr/share/applications/smartgit.desktop
+   添加如下：
+     [Desktop Entry]
+     Encoding=UTF-8
+     Name=SmartGit                                     #根据程序名字进行修改
+     Comment=SmartGit                                  #程序描述，可选择性修改
+     Exec=/home/dabuff/software/smartgit/smartgit-linux-18_1_4/smartgit/bin/smartgit.sh  #根据安装的可执行软件路径进行修改
+
+     Icon=/home/dabuff/software/smartgit/smartgit-linux-18_1_4/smartgit/bin/smartgit-32.png #根据该可执行软件图标的实际路径修改
+     Terminal=false                                    #软件打开时是否启动终端     
+     StartupNotify=true
+     Type=Application
+     Categories=Application;
+
